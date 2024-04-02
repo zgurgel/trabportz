@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfólio de Zenith Gurgel</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--content">
+        <h1 class="header--title">Zenith Gurgel</h1>
+        <nav>
+          <ul class="header--navlist">
+            <li class="header--navitem">
+              <a class="header--navlink" href="#about" title="Sobre"
+                >Sobre Mim</a
+              >
+            </li>
+            <li class="header--navitem">
+              <a class="header--navlink" href="#formacao" title="Formação"
+                >Formação</a
+              >
+            </li>
+            <li class="header--navitem">
+              <a class="header--navlink" href="#portfolio" title="Portfólio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header--navitem">
+              <a class="header--navlink" href="#contact" title="Contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="about" class="about">
+        <h2 class="title">Sobre Mim</h2>
+        <div class="about--content">
+          <img
+            class="about--content--image"
+            src="imagens/profile.jpg"
+            alt="Zenith Gurgel"
+          />
+          <p class="about--content--description">
+            Olá, meu nome é Zenith, sou Engenheiro, Bacharel em Direito e, de
+            longas datas, um interessado em assuntos correlatos à Informática.
+            Como venho da "Geração 80", desde criança fui me interessando pelo
+            desenvolvimento da computação e programação, em geral, ainda muito
+            incipiente quando comparado os dias atuais, mas bastante promissor
+            para a época. Programei em computadores com processadores Z80, 386,
+            486 em diante. Estudei Basic, Cobol, Fortran, Assembly, dentre
+            outras, e planilhas antigas como Quattro Pro, Lotus 123. Nessa era
+            moderna tive a oportunidade de estudar Delphi, C, C++ e inclusive
+            adentrar na programação orientada a objeto.
+          </p>
+
+          <p class="about--content--description">
+            Poder fazer ADS é um desejo antigo! E estar aprendendo e estudando
+            linguagem Web é concretização desse sonho. Espero continuar nesse
+            processo e enriquecer cada vez mais meus conhecimentos.
+          </p>
+        </div>
+      </section>
+
+      <section id="formacao" class="formacao">
+        <h2 class="title">Formação</h2>
+        <br /><br /><br />
+        <ul class="experiences--list">
+          <li class="experiences--card">
+            <h3 class="experiences--card--title">
+              Análise e Desenvolvimento de Sistemas
+            </h3>
+            <h4 class="experiences--card--company">UNINTER</h4>
+            <p class="experiences--card--description">
+              Início: 07/2023<br />
+              Previsão de Término: 12/2025<br />
+            </p>
+          </li>
+
+          <li class="experiences--card">
+            <h3 class="experiences--card--title">Bacharelado em Direito</h3>
+            <h4 class="experiences--card--company">
+              Universidade Federal do Ceará
+            </h4>
+            <p class="experiences--card--description">
+              Início: 08/2000<br />
+              Término: 12/2024<br />
+            </p>
+          </li>
+
+          <li class="experiences--card">
+            <h3 class="experiences--card--title">Engenharia Elétrica</h3>
+            <h4 class="experiences--card--company">
+              Universidade Federal do Ceará
+            </h4>
+            <p class="experiences--card--description">
+              Início: 01/1992<br />
+              Término: 12/1996<br />
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <h2 class="title">Portfólio</h2>
+        <br /><br /><br />
+        <ul class="experiences--list">
+          <li class="experiences--card">
+            <h3 class="experiences--card--title">
+              Projeto 1 - Verificador de CPFs (fictício)
+            </h3>
+            <p class="experiences--card--description">
+              O presente site serve para verificar a validade de números de CPF
+              <a href="XXXXXX">(acesse aqui)</a><br />
+            </p>
+          </li>
+
+          <li class="experiences--card">
+            <h3 class="experiences--card--title">
+              Projeto 2 - Gerador de apostas da megasena (fictício)
+            </h3>
+            <p class="experiences--card--description">
+              Trata-se de um gerador, online, de apostas aleatórias da megasena
+              <a href="YYYYYYY">(acesse aqui)</a><br />
+            </p>
+          </li>
+
+          <li class="experiences--card">
+            <h3 class="experiences--card--title">
+              Projeto 3 - Site de compras (fictício)
+            </h3>
+            <p class="experiences--card--description">
+              Projeto de site de compras estilo Mercado Livre
+              <a href="ZZZZZZZZ">(acesse aqui)</a><br />
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="title">Contato</h2>
+
+        <form id="contact-form" class="contact--form">
+          <div class="contact--form--group">
+            <label for="name" class="contact--form--label">Nome</label>
+            <input
+              type="text"
+              id="name"
+              class="contact--form--input"
+              placeholder="Digite seu nome"
+            />
+            <span class="contact--form--error"></span>
+          </div>
+
+          <div class="contact--form--group">
+            <label for="email" class="contact--form--label">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              class="contact--form--input"
+              placeholder="Digite seu e-mail"
+            />
+            <span class="contact--form--error"></span>
+          </div>
+
+          <div class="contact--form--group">
+            <label for="message" class="contact--form--label">Mensagem</label>
+            <textarea
+              id="message"
+              class="contact--form--textarea"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+            <span class="contact--form--error"></span>
+          </div>
+
+          <button class="contact--form--button" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

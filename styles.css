@@ -1,0 +1,292 @@
+:root {
+  --green-grad: linear-gradient(to bottom, #31cfff, #002fff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100dvw;
+  min-height: 100dvh;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-bottom: 2rem;
+}
+
+.header {
+  width: 100%;
+  padding: 0 24px;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4.36px 16px -2.18px rgba(0, 0, 0, 0.1);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header--content {
+  width: 100%;
+  height: 80px;
+  max-width: 810px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* .header nav {
+  display: none;
+} */
+
+.header--navlist {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header--navitem {
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.header--navitem:hover {
+  border-bottom-color: #5badff;
+  color: #5badff;
+}
+
+.header--navlink {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 2%;
+}
+
+main {
+  width: 100%;
+  max-width: 810px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 24px;
+}
+
+main > section {
+  margin-top: 96px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.about--content--image {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about--content--description {
+  text-align: justify;
+  font-size: 0.9375rem;
+  line-height: 130%;
+  font-weight: 200;
+  color: #8491a0;
+  max-width: 300px;
+}
+
+main .title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-image: var(--green-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+}
+
+.experiences--list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.experiences--card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.experiences--card--title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.experiences--card--company {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #d5d5d5;
+  margin-bottom: 12px;
+}
+
+.experiences--card--description {
+  font-size: 0.8125rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: #8491a0;
+  text-align: justify;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.contact--form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact--form--group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact--form--input {
+  outline: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #aaaaaa;
+  color: var(--text);
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.contact--form--textarea {
+  outline: none;
+  min-height: 100px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #aaaaaa;
+  color: var(--text);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  resize: vertical;
+}
+
+.contact--form--label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #c5c5c5;
+}
+
+.contact--form--button {
+  align-self: flex-end;
+  width: fit-content;
+  margin-top: 12px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  border: 1px solid #00b08f;
+  color: #00b08f;
+}
+
+.contact--form--button:hover {
+  background: #00b08f;
+  color: var(--text);
+}
+
+.contact--form--error {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #ff4d4d;
+}
+
+.contact--form--input[data-error="true"] {
+  border-color: #ff4d4d;
+}
+
+.contact--form--textarea[data-error="true"] {
+  border-color: #ff4d4d;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (width >= 768px) {
+  .header nav {
+    display: block;
+  }
+
+  .about--content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .about--content--image {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+  }
+
+  .about--content--description {
+    grid-column: 2;
+    max-width: none;
+  }
+
+  .experiences--card {
+    max-width: none;
+  }
+
+  .contact--form {
+    max-width: none;
+  }
+}
